@@ -34,7 +34,14 @@ Dans les codes de exple_matmul_C ou exple_matsum_Fortran
     - perf
 - Générer un graphe d'appel
 
-## Exercice 3 
+## Exercice 3 
 
-- 
+- Profiler les programmes du llnl
+
+## Exercice 4 
+
+- Suivre les instructions du .pdf pour profiler NPB3.4-MZ/NPB3.4-MZ-MPI/BT-MZ/ avec 
+    - scorep
+    - scalasca
+
 
