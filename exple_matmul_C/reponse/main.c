@@ -60,6 +60,8 @@ int main(void){
   double **a = (double**)malloc(N*sizeof(double*));
   double **b = (double**)malloc(N*sizeof(double*));
   double **c = (double**)malloc(N*sizeof(double*));
+  clock_t c_start,c_stop;
+  double time_elapsed_s;
 
   /* allocate arrays */
   for (i=0; i<N; i++){
@@ -78,18 +80,32 @@ int main(void){
   }
 
   /* product c = a x b */
+  c_start = clock();
+
   mul_ikj(a, b, c, N);
 
+  c_stop = clock();
+  time_elapsed_s = (c_stop-c_start)/(double) CLOCKS_PER_SEC;
+  printf("CPU time (s): %f \n", time_elapsed_s);
+
   /* product c = a x b */
+  c_start = clock();
+
   mul_jki(a, b, c, N);
 
+  c_stop = clock();
+  time_elapsed_s = (c_stop-c_start)/(double) CLOCKS_PER_SEC;
+  printf("CPU time (s): %f \n", time_elapsed_s);
+
   /* product c = a x b */
+  c_start = clock();
+
   mul_ijk(a, b, c, N);
 
-  /* free memory */
-  free(a);
-  free(b);
-  free(c);
+  c_stop = clock();
+  time_elapsed_s = (c_stop-c_start)/(double) CLOCKS_PER_SEC;
+  printf("CPU time (s): %f \n", time_elapsed_s);
+
 
   return 0;
 }

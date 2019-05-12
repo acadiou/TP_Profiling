@@ -17,6 +17,7 @@
 ****************************************************************************/
 #include "mpi.h"
 #include <stdio.h>
+#include <stdlib.h>
 #define  ARRAYSIZE	16000000
 #define  MASTER		0
 
