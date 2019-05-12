@@ -44,4 +44,14 @@ Dans les codes de exple_matmul_C ou exple_matsum_Fortran
     - scorep
     - scalasca
 
+## Exercice 5
+
+Dans le code exple_io_bound_C 
+
+- Compiler 
+- Exécuter le run.sh
+- Suivre l'activité des E/S avec 
+    - top
+    - perf
+
 
