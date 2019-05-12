@@ -20,7 +20,7 @@ Avec les codes de exple_matmul_C ou exple_matsum_Fortran
     - free 
     - htop 
     - vmstat
-- Enregistrer l'occupaion mémoire avec 
+- Enregistrer l'occupation mémoire avec 
     - ps
 
 ## Exercice 2
@@ -36,7 +36,10 @@ Dans les codes de exple_matmul_C ou exple_matsum_Fortran
 
 ## Exercice 3 
 
-- Profiler les programmes du llnl
+- Profiler les programmes du llnl dans exos_llnl_C ou exos_llnl_Fortran avec 
+    - gprof
+    - scorep
+    - scalasca
 
 ## Exercice 4 
 
