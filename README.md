@@ -13,7 +13,7 @@ Contient des utiliaires pour le profiling
 
 ## Exercice 1
 
-Avec les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsul_Fortran)
+Avec les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsum_Fortran)
 
 - Compiler les codes
 - Mesurer le temps d'exécution avec 
@@ -32,7 +32,7 @@ Avec les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exp
 
 ## Exercice 2
 
-Dans les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsul_Fortran)
+Dans les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsum_Fortran)
 
 
 - Implémenter une mesure de temps des différentes fonctions 
