@@ -41,8 +41,13 @@ Dans les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](expl
 
 ## Exercice 3 
 
-Profiler les programmes du llnl avec les outils de profiling de votre choix
+Faire le exercices du [Lawrence Livermore National Laboratory](https://hpc.llnl.gov/training/tutorials) dont les tutoriaux sont généralement bien fit pour de nombreux aspects du calcul HPC. 
+
+Les exercices proposés pour le profiling sont ici :
+
 [programmes du llnl](https://computing.llnl.gov/tutorials/performance_tools/exercise.html)
+
+Uitiliser les outils de profiling de votre choix
 
 ## Exercice 4 
 
