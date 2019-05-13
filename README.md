@@ -4,6 +4,9 @@
 
 Contient des utiliaires pour le profiling
 
+- (gprof2dot.py)[Tools/gprof2dot.py] utilitaire python3 pour transformer les sorties de gprof en fichier dot
+- (local.sh)[Tools/local.sh] script bash pour sortir le temps et la mémoire utilisés par un exécutable pendant qu'il tourne
+
 ## Exercice 1
 
 Avec les codes de exple_matmul_C ou exple_matsum_Fortran
