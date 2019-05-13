@@ -9,7 +9,7 @@ Contient des utiliaires pour le profiling
 
 ## Exercice 1
 
-Avec les codes de exple_matmul_C ou exple_matsum_Fortran
+Avec les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](exple_matsul_Fortran)
 
 - Compiler les codes
 - Mesurer le temps d'exécution avec 
@@ -28,9 +28,11 @@ Avec les codes de exple_matmul_C ou exple_matsum_Fortran
 
 ## Exercice 2
 
-Dans les codes de exple_matmul_C ou exple_matsum_Fortran
+Dans les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](exple_matsul_Fortran)
+
 
 - Implémenter une mesure de temps des différentes fonctions 
+- Compiler avec le cas échéant, les options adaptées aux outils de profiling qui le requièrent
 - Obtenir un profil plat en utilisant 
     - gprof
     - valgrind 
@@ -39,10 +41,8 @@ Dans les codes de exple_matmul_C ou exple_matsum_Fortran
 
 ## Exercice 3 
 
-- Profiler les programmes du llnl dans exos_llnl_C ou exos_llnl_Fortran avec 
-    - gprof
-    - scorep
-    - scalasca
+Profiler les programmes du llnl avec les outils de profiling de votre choix
+[programmes du llnl](https://computing.llnl.gov/tutorials/performance_tools/exercise.html)
 
 ## Exercice 4 
 
@@ -52,7 +52,7 @@ Dans les codes de exple_matmul_C ou exple_matsum_Fortran
 
 ## Exercice 5
 
-Dans le code exple_io_bound_C 
+Dans le code [exple_io_bound_C](exple_io_bound_C)
 
 - Compiler 
 - Exécuter le run.sh
