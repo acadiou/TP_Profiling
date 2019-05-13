@@ -1,5 +1,9 @@
 # Exercices pour le profiling
 
+Ce dépôt propose quelques petits codes pour s'exercer à l'usage des outils de profiling. 
+
+À utiliser dans l'ordre qui vous convient. 
+
 ## Tools 
 
 Contient des utiliaires pour le profiling
