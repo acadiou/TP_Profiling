@@ -3,7 +3,7 @@
 
 SHELL=/bin/bash
 
-F90=scorep f95
+F90=f95
 
 PREP=
 ifdef DEBUG
