@@ -9,7 +9,7 @@ Contient des utiliaires pour le profiling
 
 ## Exercice 1
 
-Avec les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](exple_matsul_Fortran)
+Avec les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsul_Fortran)
 
 - Compiler les codes
 - Mesurer le temps d'exécution avec 
@@ -28,7 +28,7 @@ Avec les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](expl
 
 ## Exercice 2
 
-Dans les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](exple_matsul_Fortran)
+Dans les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exple_matsul_Fortran)
 
 
 - Implémenter une mesure de temps des différentes fonctions 
@@ -41,7 +41,7 @@ Dans les codes de [exple_matmul_C](exple_matmul_C)ou [exple_matsum_Fortran](expl
 
 ## Exercice 3 
 
-Faire le exercices du [Lawrence Livermore National Laboratory](https://hpc.llnl.gov/training/tutorials) dont les tutoriaux sont généralement bien fit pour de nombreux aspects du calcul HPC. 
+Faire le exercices du [Lawrence Livermore National Laboratory](https://hpc.llnl.gov/training/tutorials) dont les tutoriaux sont généralement bien fait pour de nombreux aspects du calcul HPC. 
 
 Les exercices proposés pour le profiling sont ici :
 
