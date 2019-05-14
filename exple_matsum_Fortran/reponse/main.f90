@@ -1,8 +1,8 @@
-!> @file    test.f90
+!> @file    main.f90
 !> @author  anne cadiou
 !> @brief   example for profiling
 
-program test
+program main
 
   use mFunc
 
@@ -56,5 +56,5 @@ program test
   deallocate(y)
   deallocate(z)
 
-end program test
+end program main
 

@@ -12,15 +12,14 @@ endif
 ifdef PROF
 PREP=-pg
 endif
-F90FLAGS = -fdefault-real-8 -fdefault-double-8 -O3 $(PREP)
-LDFLAGS=$(PREP)
+F90FLAGS = -fopenmp -fdefault-real-8 -fdefault-double-8 -O2 $(PREP)
+LDFLAGS= -fopenmp $(PREP)
 
 EXE=a.out
 
 all: $(EXE)
 
-SRC=mFunc.f90 \
-    main.f90  
+SRC=main.f90
 
 OBJ=$(SRC:.f90=.o)
 

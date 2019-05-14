@@ -3,7 +3,7 @@
 
 SHELL=/bin/bash
 
-F90=f95
+F90=mpif90
 
 PREP=
 ifdef DEBUG
@@ -12,14 +12,14 @@ endif
 ifdef PROF
 PREP=-pg
 endif
-F90FLAGS = -fopenmp -fdefault-real-8 -fdefault-double-8 -O2 $(PREP)
-LDFLAGS= -fopenmp $(PREP)
+F90FLAGS = -fdefault-real-8 -fdefault-double-8 -O2 $(PREP)
+LDFLAGS= $(PREP)
 
 EXE=a.out
 
 all: $(EXE)
 
-SRC=prog_cpu_time_omp.f90
+SRC=main.f90
 
 OBJ=$(SRC:.f90=.o)
 

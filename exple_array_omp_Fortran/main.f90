@@ -1,8 +1,8 @@
-!> @file    prog_cpu_time_omp.f90
+!> @file    main.f90
 !> @author  anne cadiou
 !> @brief   example of CPU_TIME usage
 
-program prog_cpu_time_omp
+program main
   !$ use OMP_LIB
   implicit none
 
@@ -14,8 +14,8 @@ program prog_cpu_time_omp
   real :: beg_cpu_time,end_cpu_time
   real :: beg_omp_time,end_omp_time
 
-  ! 100 10^6
-  ndim = 100000000
+  ! 10^9
+  ndim = 1000000000
   allocate(x(ndim))
 
   n = 1
@@ -29,11 +29,11 @@ program prog_cpu_time_omp
   end do
   !$OMP END PARALLEL DO
   end_omp_time = OMP_GET_WTIME()
-  print*, end_omp_time-beg_omp_time
+  print*, 'OMP Time: ', end_omp_time-beg_omp_time
   call CPU_TIME(end_cpu_time)
   print*, end_cpu_time-beg_cpu_time
 
   deallocate(x)
 
-end program prog_cpu_time_omp
+end program main
 

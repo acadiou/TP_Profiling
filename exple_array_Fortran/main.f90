@@ -2,7 +2,7 @@
 !> @author  anne cadiou
 !> @brief   example of CPU_TIME usage
 
-program prog_cpu_time
+program main
 
   implicit none
 
@@ -12,8 +12,8 @@ program prog_cpu_time
   ! timer 
   real :: beg_cpu_time,end_cpu_time
 
-  ! 100 10^6
-  ndim = 100000000
+  ! 10^9
+  ndim = 1000000000
   allocate(x(ndim))
 
   call CPU_TIME(beg_cpu_time)
@@ -25,5 +25,5 @@ program prog_cpu_time
 
   deallocate(x)
 
-end program prog_cpu_time
+end program main
 

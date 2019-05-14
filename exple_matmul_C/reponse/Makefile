@@ -9,6 +9,9 @@ endif
 ifdef PROF
 PREP=-pg
 endif
+ifdef PERF
+PREP=-fno-omit-frame-pointer
+endif
 CFLAGS=-W -Wall -ansi -pedantic $(PREP)
 LDFLAGS=$(PREP)
 
