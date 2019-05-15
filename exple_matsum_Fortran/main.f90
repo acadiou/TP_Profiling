@@ -13,9 +13,9 @@ program main
   real, allocatable, dimension(:,:,:) :: x,y,z
 
   ! data 
-  ni = 256
-  nj = 256
-  nk = 256
+  ni = 512
+  nj = 512
+  nk = 512
 
   ! allocate
   allocate(x(ni,nj,nk))
