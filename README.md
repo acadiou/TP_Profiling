@@ -18,7 +18,7 @@ Avec les codes de [exple_matmul_C](exple_matmul_C) ou [exple_matsum_Fortran](exp
 - Compiler les codes
 - Mesurer le temps d'exécution avec 
     - time
-    - /usr/bin/time 
+    - /usr/bin/time -v
     - perf
 - Observer l'exécution avec 
     - top 
