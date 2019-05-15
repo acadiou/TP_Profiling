@@ -65,7 +65,7 @@ Utiliser le code dans [exple_io_cpu_Fortran](exple_io_cpu_Fortran) pour observer
 
 ## Exercice 6
 
-Profiling d'applications parallèles : suivre les instructions du .pdf pour profiler NPB3.4-MZ/NPB3.4-MZ-MPI/BT-MZ/ avec 
+Profiling d'applications parallèles : suivre les instructions du .pdf pour profiler [NPB3.4-MZ](NPB3.4-MZ/NPB3.4-MZ-MPI/BT-MZ/) avec 
     - scorep
     - scalasca
 
