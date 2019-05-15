@@ -84,4 +84,9 @@ Les exercices proposés pour le profiling sont ici :
 Utiliser les outils de profiling de votre choix
 
 
+## Références
 
+- [Tutoriel sur perf](https://twiki.cern.ch/twiki/bin/view/LHCb/CodeAnalysisTools#CPU_assisted_performance_analysi)
+- [Une mine d'or sur l'analyse de performances...](http://www.brendangregg.com/)
+    - [...sous Linux...](http://www.brendangregg.com/linuxperf.html)
+        - [...et avec perf en particulier](http://www.brendangregg.com/perf.html)
