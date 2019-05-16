@@ -164,7 +164,7 @@ int main(int argc, char* argv)
     conv = sqrt(conv);
     notConverged = step < step_max && conv > conv_stop;
 
-    //if (mpi_context.rank == 0) printf("Step = %d --> conv = %lf\n", step, conv);
+    if (mpi_context.rank == 0) printf("Step = %d --> conv = %lf\n", step, conv);
 
     // Echange des tableaux nouveau et ancien
     tmp = uold;
