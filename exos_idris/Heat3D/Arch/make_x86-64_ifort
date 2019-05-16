@@ -1,0 +1,12 @@
+# Architecture
+ARCH = X86_64
+
+# Compilateur
+CC = mpiicc -std=c99
+CF90 = mpiifort
+
+# Options de compilation
+CFLAGS = -O3 -fopenmp
+
+# Options edition de liens
+LDFLAGS = -fopenmp

@@ -1,0 +1,12 @@
+# Architecture
+ARCH = BGQ
+
+# Compilateur
+CC = mpixlc_r -qlanglvl=stdc99
+CF90 = mpixlf90_r
+
+# Options de compilation
+CFLAGS = -O3 -qsmp=omp
+
+# Options edition de liens
+LDFLAGS = -qsmp=omp
