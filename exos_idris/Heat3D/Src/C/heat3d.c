@@ -1,6 +1,7 @@
 #include "heat3d.h"
 #include "heat3d_mpi.h"
 
+#include <stdio.h>
 #include <math.h>
 
 int main(int argc, char* argv)
@@ -134,6 +135,18 @@ int main(int argc, char* argv)
     }
   }
 
+  FILE *fres;
+  char fnam[80];
+  sprintf(fnam,"init_p%d.dat",mpi_context.rank);
+  fres = fopen(fnam,"wb");
+  if (fres==NULL)
+  {
+    printf("Error in file opening\n");
+    exit(0);
+  }
+  fwrite(uold, sizeof(double), (nx + 4) * (ny + 4) * (nz + 4) , fres);
+  fclose(fres);
+
   notConverged = true;
   start = MPI_Wtime();
 
@@ -160,6 +173,17 @@ int main(int argc, char* argv)
     }
 
     MPI_Allreduce(MPI_IN_PLACE, &conv, 1, MPI_DOUBLE_PRECISION, MPI_SUM, mpi_context.comm3d);
+
+    sprintf(fnam,"res_p%d.dat",mpi_context.rank);
+    fres = fopen(fnam,"wb");
+    if (fres==NULL)
+    {
+      printf("Error in file opening\n");
+      exit(0);
+    }
+    fwrite(u, sizeof(double), (nx + 4) * (ny + 4) * (nz + 4) , fres);
+    fclose(fres);
+
 
     conv = sqrt(conv);
     notConverged = step < step_max && conv > conv_stop;

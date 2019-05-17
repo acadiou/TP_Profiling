@@ -5,7 +5,8 @@ program heat3d
   integer, parameter :: nx_glo = 512, ny_glo = 512, nz_glo = 512
   integer, parameter :: step_max = 200
   integer, parameter :: fres=92
-  character*15 :: fnam
+  character*80 :: fnam
+  character(len=3) :: str
 
   integer :: nx, ny, nz
   integer :: i, j, k, step
@@ -88,7 +89,8 @@ program heat3d
   ! Condition initiale
   uold(1:nx, 1:ny, 1:nz) = 20.0d0
 
-  write(fnam,'(a6,i1,a4)') "init_p",rank+1,".bin"
+  write(str,'(i3.3)') rank+1
+  fnam='init_p'//trim(str)//'.bin'
   open(fres,file=trim(fnam), access='STREAM', form='UNFORMATTED', convert='LITTLE_ENDIAN')
   write(fres) (((uold(i,j,k),i=1,nx),j=1,ny),k=1,nz)
   close(fres)
@@ -120,7 +122,8 @@ program heat3d
 
     call MPI_Allreduce(MPI_IN_PLACE, conv, 1, MPI_DOUBLE_PRECISION, MPI_SUM, comm3d, ierr)
 
-    write(fnam,'(a5,i1,a4)') "res_p",rank+1,".bin"
+    write(str,'(i3.3)') rank+1
+    fnam='res_p'//trim(str)//'.bin'
     open(fres,file=trim(fnam), access='STREAM', form='UNFORMATTED', convert='LITTLE_ENDIAN')
     write(fres) (((u(i,j,k),i=1,nx),j=1,ny),k=1,nz)
     close(fres)
